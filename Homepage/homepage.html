@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="homepage.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Basic Codes in HTML</title>
+ </head>
+<body>
+    <script src="homepage.js"></script>   
+    <div class="header">
+        <img src="Logo.png" alt="School Logo">
+        <h1>12 Basic Codes in HTML</h1>
+        <div class="account">
+            <button onclick="toggleDropdown()">My Account</button>
+            <div class="dropdown" id="dropdown">
+                <a href="javascript:void(0);" onclick="openFeedbackModal()">Feedback</a> 
+                <a href="http://127.0.0.1:5500/Frontpage/frontpage.html">Sign Out</a>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="grid">
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Heading/heading.html">Heading</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Transparent%20Boxes/transparent%20boxes.html">Transparent Boxes</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Linear%20Gradient/linear.html">Linear-gradient<br>Background Image</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Audio/audio.html">Add Audio</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/CSS%20Background/cssbackground.html">CSS Background</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Translate%20Method/translate.html">The translate() Method</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Rotate%20Method/rotate.html">The rotate() Method</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/SkewX%20Method/skewx.html">The skewX() Method</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Trasitioning%20Timing/transition.html">Transitioning-timing</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Animation%20Timing/animation.html">Animation-timing</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/CSS%20Button/button.html">CSS Button</a>
+        <a href="http://127.0.0.1:5500/12%20Basic%20Codes/Video/video.html">Add Video</a>
+    </div>
+    <div class="footer">
+        &copy; 2025 Blazers | ICT Zuckerberg
+    </div>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeFeedbackModal()">&times;</button>
+            <h3>Feedback</h3>
+            <form id="feedbackForm" onsubmit="submitFeedback(event)">
+                <textarea rows="4" placeholder="Enter your feedback here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p class="thank-you-message" id="thankYouMessage">Thank you for your feedback!</p>
+        </div>
+    </div>
+</body>
+</html>
